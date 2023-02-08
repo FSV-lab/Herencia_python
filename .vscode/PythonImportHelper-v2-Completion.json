@@ -1,0 +1,55 @@
+[
+    {
+        "label": "*",
+        "importPath": "Vehiculo",
+        "description": "Vehiculo",
+        "isExtraImport": true,
+        "detail": "Vehiculo",
+        "documentation": {}
+    },
+    {
+        "label": "Coche",
+        "kind": 6,
+        "importPath": "paquete.Coche2",
+        "description": "paquete.Coche2",
+        "peekOfCode": "class Coche(vehiculo):\n    def __init__(self,Color,Ruedas,Puertas):\n        self.Color= Color\n        self.Ruedas=Ruedas\n        self.Puertas=Puertas\n    def datos_vehiculo(self):\n        print(f\"El  color de su Coche es: {self.Color} y tiene {self.Ruedas} ruedas con {self.Puertas} puertas\")  \ncoche1=Coche(\"Rojo\", 4, 4)\ncoche1.datos_vehiculo()\ncoche1.Cilindraje()",
+        "detail": "paquete.Coche2",
+        "documentation": {}
+    },
+    {
+        "label": "vehiculo",
+        "kind": 6,
+        "importPath": "paquete.Vehiculo",
+        "description": "paquete.Vehiculo",
+        "peekOfCode": "class vehiculo:\n    Color=None\n    Ruedas=None\n    Puertas=None\n    def Velocidad(self):\n        print('Este Vehiculo va a una  Velocidad de 197 km por hora')\n    def Cilindraje(self):\n        print('El  Vehiculo tiene un Cilindraje de 2,0')",
+        "detail": "paquete.Vehiculo",
+        "documentation": {}
+    },
+    {
+        "label": "Vehiculo",
+        "kind": 6,
+        "importPath": "Coche",
+        "description": "Coche",
+        "peekOfCode": "class Vehiculo():\n    Color = None\n    Ruedas = None\n    Puertas = None    \n    def Velocidad(self):\n        print('Este Vehiculo va a una  Velocidad de 197 km por hora')\n    def Cilindrada(self):\n        print('El  Vehiculo tiene un Cilindraje de 2,0')\nclass Coche(Vehiculo):\n    def info(self): ",
+        "detail": "Coche",
+        "documentation": {}
+    },
+    {
+        "label": "Coche",
+        "kind": 6,
+        "importPath": "Coche",
+        "description": "Coche",
+        "peekOfCode": "class Coche(Vehiculo):\n    def info(self): \n        print('El Coche es de Color:',Color,'Tiene',Puertas,'puertas','y consta de ',Ruedas,'ruedas.')\nc = Coche()\nc.Cilindrada()\nc.Velocidad()\nprint(c.Cilindrada,c.Velocidad)",
+        "detail": "Coche",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "Coche",
+        "description": "Coche",
+        "peekOfCode": "c = Coche()\nc.Cilindrada()\nc.Velocidad()\nprint(c.Cilindrada,c.Velocidad)",
+        "detail": "Coche",
+        "documentation": {}
+    }
+]
